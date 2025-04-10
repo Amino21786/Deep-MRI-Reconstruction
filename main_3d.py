@@ -45,7 +45,7 @@ def iterate_minibatch(data, batch_size, shuffle=True):
     if shuffle:
         data = np.random.permutation(data)
 
-    for i in xrange(0, n, batch_size):
+    for i in range(0, n, batch_size):
         yield data[i:i+batch_size]
 
 
